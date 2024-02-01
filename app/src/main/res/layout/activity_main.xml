@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_toast"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="countUpTeam2"
+        android:text="@string/puls_team2"
+        android:textSize="25sp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/show_count_team2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/base_value"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/show_count_team1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/base_value"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_count"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="countUpTeam1"
+        android:text="@string/plus_team1"
+        android:textSize="25sp"
+        android:textColor="@android:color/white" />
+</LinearLayout>
